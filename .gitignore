@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+citations.db
+server_errors.log

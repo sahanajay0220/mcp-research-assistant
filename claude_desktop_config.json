@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "research-assistant": {
+      "command": "C:\\Users\\sjjay\\OneDrive\\Documents\\CORNELL\\Fall Semester 26\\Applied Artifical Intelligence for Technical Teams 5405\\assignment 4 python\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\sjjay\\OneDrive\\Documents\\CORNELL\\Fall Semester 26\\Applied Artifical Intelligence for Technical Teams 5405\\assignment 4 python\\src\\assignment_4_python\\server.py"
+      ]
+    }
+  }
+}
