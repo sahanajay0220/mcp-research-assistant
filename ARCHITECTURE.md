@@ -1,5 +1,7 @@
 # Architecture
 
+**Domain: Academic Research**
+
 ```mermaid
 flowchart TD
     A[Claude Desktop<br/>MCP client] -->|stdio / JSON-RPC| B
@@ -13,7 +15,7 @@ flowchart TD
         E --> F
     end
 
-    F --> G[(citations.db<br/>SQLite, parameterized queries)]
+    F --> G[(citations.db<br/>SQLite, parameterized queries<br/>Local file - no external API,<br/>no credentials needed)]
     F -.->|on unexpected error| H[server_errors.log<br/>server-side only]
 ```
 
@@ -21,5 +23,5 @@ flowchart TD
 
 1. Claude Desktop connects to `server.py` over stdio using the MCP protocol.
 2. Tool calls, resource reads, and the prompt template all pass through one shared validation and error-handling layer before touching data.
-3. Validated input reaches `citations.db` through parameterized SQL queries only.
+3. Validated input reaches `citations.db` through parameterized SQL queries only. Since this server only touches a local SQLite file and never calls an external API, no authentication or credentials are required.
 4. Any unexpected failure is logged privately to `server_errors.log` and never shown to the user in detail.
