@@ -12,6 +12,18 @@ FAKE_PAPER_DATABASE = [
     {"title": "Deep Residual Learning for Image Recognition", "author": "He et al.", "year": 2015, "topic": "neural networks"},
     {"title": "A Few Useful Things to Know About Machine Learning", "author": "Domingos", "year": 2012, "topic": "machine learning"},
     {"title": "Generative Adversarial Networks", "author": "Goodfellow et al.", "year": 2014, "topic": "neural networks"},
+    {"title": "ImageNet Classification with Deep Convolutional Neural Networks", "author": "Krizhevsky et al.", "year": 2012, "topic": "computer vision"},
+    {"title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", "author": "Devlin et al.", "year": 2018, "topic": "transformers"},
+    {"title": "Playing Atari with Deep Reinforcement Learning", "author": "Mnih et al.", "year": 2013, "topic": "reinforcement learning"},
+    {"title": "Long Short-Term Memory", "author": "Hochreiter and Schmidhuber", "year": 1997, "topic": "neural networks"},
+    {"title": "Random Forests", "author": "Breiman", "year": 2001, "topic": "machine learning"},
+    {"title": "Support-Vector Networks", "author": "Cortes and Vapnik", "year": 1995, "topic": "machine learning"},
+    {"title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting", "author": "Srivastava et al.", "year": 2014, "topic": "neural networks"},
+    {"title": "Adam: A Method for Stochastic Optimization", "author": "Kingma and Ba", "year": 2015, "topic": "machine learning"},
+    {"title": "You Only Look Once: Unified, Real-Time Object Detection", "author": "Redmon et al.", "year": 2016, "topic": "computer vision"},
+    {"title": "Sequence to Sequence Learning with Neural Networks", "author": "Sutskever et al.", "year": 2014, "topic": "transformers"},
+    {"title": "Mastering the Game of Go with Deep Neural Networks and Tree Search", "author": "Silver et al.", "year": 2016, "topic": "reinforcement learning"},
+    {"title": "A Fast Learning Algorithm for Deep Belief Nets", "author": "Hinton et al.", "year": 2006, "topic": "neural networks"},
 ]
 
 
