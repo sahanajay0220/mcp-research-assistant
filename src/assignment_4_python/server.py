@@ -1,3 +1,7 @@
+# The @mcp.tool(), @mcp.resource(), and @mcp.prompt() decorator pattern used
+# in this file follows the one shown in the official MCP Python SDK
+# documentation and examples: https://github.com/modelcontextprotocol/python-sdk
+
 from mcp.server.mcpserver import MCPServer
 from database import get_connection, validate_citation_input, InvalidInputError, logger
 
@@ -39,15 +43,6 @@ def add_citation(title: str, author: str, year: int) -> dict:
     except Exception as e:
         logger.error("add_citation failed: %s", e, exc_info=True)
         return {"status": "error", "message": "Could not save citation due to an internal error. Please try again."}
-
-    conn = get_connection()
-    conn.execute(
-        "INSERT INTO citations (title, author, year) VALUES (?, ?, ?)",
-        (title, author, year),
-    )
-    conn.commit()
-    conn.close()
-    return {"status": "success", "citation": {"title": title, "author": author, "year": year}}
 
 @mcp.resource("bibliography://all")
 def all_citations() -> str:

@@ -1,14 +1,14 @@
-import os
+from pathlib import Path
 import sqlite3
-
 import logging
 
-LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "server_errors.log")
+BASE_DIR = Path(__file__).resolve().parent
+
+LOG_FILE = BASE_DIR / "server_errors.log"
 logging.basicConfig(filename=LOG_FILE, level=logging.ERROR)
 logger = logging.getLogger("research-assistant")
 
-DB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "citations.db")
-
+DB_FILE = BASE_DIR / "citations.db"
 
 def get_connection():
     """Open a connection to the database file."""
