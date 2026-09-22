@@ -67,3 +67,4 @@ assignment 4 python/
 ├── claude_desktop_config.json
 └── README.md
 ```
+## Claude Sonnet was used for this coding assignment.
