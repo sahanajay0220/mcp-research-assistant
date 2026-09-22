@@ -3,7 +3,7 @@
 # documentation and examples: https://github.com/modelcontextprotocol/python-sdk
 
 from mcp.server.mcpserver import MCPServer
-from database import get_connection, validate_citation_input, InvalidInputError, logger
+from database import get_connection, validate_citation_input, InvalidInputError, logger # type: ignore
 
 mcp = MCPServer("Research Assistant")
 
